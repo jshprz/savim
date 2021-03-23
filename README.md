@@ -3,8 +3,9 @@
 A blockchain solution application on top of celo that revolutionizes traditional ROSCA(Rotating Credit and Savings Association).
 
 
-## Project Structure
+## Repo Structure
 
+- /client => Where all the front-end related files is located.
 - /config => Where all the configuration files is located.
 - /contracts => Where all the smart contract files is located.
 - /controllers => Where all the business logic files of the application is located.
