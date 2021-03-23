@@ -1,6 +1,6 @@
 # savim
 
-A blockchain solution application on top of celo that revolutionized traditional ROSCA(Rotating Credit and Savings Association).
+A blockchain solution application on top of celo that revolutionizes traditional ROSCA(Rotating Credit and Savings Association).
 
 
 ## Project Structure
