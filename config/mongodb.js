@@ -5,6 +5,10 @@ const mongodb = require('mongodb');
 let mongodbClient;
 let db;
 
+// Better use async await when using this function.
+// eg. async function get() {
+//     const db = await dbConnect();
+// }
 function dbConnect() {
     return new Promise((resolve, reject) => {
         if (db) {
@@ -18,6 +22,7 @@ function dbConnect() {
                     mongodbClient = client;
                     db = mongodbClient.db(global.config.databaseName);
                     
+                    // We close the mongodb connection upon exiting the runtime nodejs.
                     process.on('exit', () => {
                         dbClose();
                     });
