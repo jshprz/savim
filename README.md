@@ -17,4 +17,4 @@ A blockchain solution application on top of celo that revolutionizes traditional
 ## Note
 
 - npm install
-- create .env to the root directory of the project to initialize configuration variables.
+- npm run test (Optional)
