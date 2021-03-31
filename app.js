@@ -1,3 +1,4 @@
+require('dotenv').config()
 global.config = require('./config');
 const express = require('express');
 const app = express();
@@ -5,6 +6,10 @@ const bodyParser = require('body-parser');
 const apiRoutes = require('./routes/api.js');
 const authRoutes = require('./routes/auth.routes.js');
 const passport = require('passport');
+
+
+//var Session = require('express-session');
+
 
 app.set('port', global.config.port);
 app.use(bodyParser.urlencoded({extended: false}));

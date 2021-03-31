@@ -3,8 +3,14 @@ const bcrypt = require('bcrypt');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    firstName: { type: String, required: '{PATH} is required!' },
-    lastName: { type: String, required: '{PATH} is required!' },
+    firstName: { 
+        type: String, 
+        required: '{PATH} is required!' 
+    },
+    lastName: { 
+        type: String, 
+        required: '{PATH} is required!' 
+    },
 
     email: {
         type: String,
