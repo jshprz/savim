@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 // Display list of all Authors.
 exports.signup = async function signup(req, res, next) {
     return res.json({
+        success: true,
         message: 'Signup successful',
         user: req.user
     });
@@ -33,7 +34,12 @@ exports.login = async (req, res, next) => {
                   expiresIn,
                   user: body }, process.env.SALT_SECRETE);
 
-              return res.json({ token });
+              return res.json({
+                success: true,
+                message: 'Logged In',
+                token,
+                expiresIn
+              });
             }
           );
         } catch (error) {

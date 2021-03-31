@@ -1,6 +1,6 @@
 var port = process.env.PORT || 8090;
 
-var config = {
+const config = {
     mongodbUrl: process.env.MONGO_DB_URL || 'mongodb://localhost:27017/',
     databaseName: process.env.MONGO_DB_NAME || 'savim',
     port: port,
